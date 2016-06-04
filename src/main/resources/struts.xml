@@ -5,10 +5,11 @@
 
 <struts>
 
-    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
 	<constant name="struts.devMode" value="true" />
+    <constant name="struts.action.extension" value=","/>
 
-    <package name="myPackage" extends="struts-default">
+    <package name="myPackage" extends="json-default">
 
         <default-action-ref name="index" />
 
@@ -19,6 +20,15 @@
         <action name="helloWorld" class="com.evildice.HelloWorldAction">
             <result name="input">/jsp/index.jsp</result>
             <result>/WEB-INF/jsp/helloWorld.jsp</result>
+        </action>
+
+        <action name="addUpNumbers" class="com.evildice.AddNumbersAction">
+            <result name="success" type="json">
+                <param name="useCache">false</param>
+                <param name="includeParameters">
+                    theSum
+                </param>
+            </result>
         </action>
 
     </package>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <!-- Author:  aiasinschi@gmail.com / modified after crunchify.com  -->
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
+        </Console>
+
+        <RollingFile name="RollingFile" filename="../logs/Struts2Test.log"
+                     filepattern="${logPath}/%d{yyyy-MM-dd HH:mm:ss}-struts-test.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingFile>
+
+    </Appenders>
+    <Loggers>
+        <Root level="error">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="RollingFile" />
+        </Root>
+        <logger name="com.evildice">
+            <level value="debug"/>
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="RollingFile" />
+        </logger>
+    </Loggers>
+</Configuration>
