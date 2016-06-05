@@ -10,20 +10,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title><decorator:title default="Struts Starter"/></title>
-    <%--<link href="<s:url value='/styles/main.css'/>" rel="stylesheet" type="text/css" media="all"/>
-    <link href="<s:url value='/struts/niftycorners/niftyCorners.css'/>" rel="stylesheet" type="text/css"/>
-    <link href="<s:url value='/struts/niftycorners/niftyPrint.css'/>" rel="stylesheet" type="text/css" media="print"/>
-    <script language="JavaScript" type="text/javascript" src="<s:url value='/struts/niftycorners/nifty.js'/>"></script>
-	<script language="JavaScript" type="text/javascript">
-        window.onload = function(){
-            if(!NiftyCheck()) {
-                return;
-            }
-            // perform niftycorners rounding
-            // eg.
-            // Rounded("blockquote","tr bl","#ECF1F9","#CDFFAA","smooth border #88D84F");
-        }
-    </script>--%>
+    <link href="<s:url value='/styles/main.css'/>" rel="stylesheet" type="text/css" media="all"/>
     <decorator:head/>
 </head>
 <body id="page-home">
@@ -43,21 +30,7 @@
             <div id="sub">
             	<h3>Sub Content</h3>
             </div>
-            
-            
-            <div id="local">
-                <h3>Local Nav. Bar</h3>
-                <ul>
-                    <li><a href="#">Content page 1</a></li>
-                    <li><a href="#">Content page 2</a></li>
-                    <li><a href="#">Content page 3</a></li>
-                    <li><a href="#">Content page 4</a></li>
-                    <li><a href="#">Content page 5</a></li>
-                    <li><a href="#">Content page 6</a></li>
-                </ul>
-            </div>
-            
-            
+
             <div id="nav">
                 <div class="wrapper">
                 <h3>Nav. bar</h3>
