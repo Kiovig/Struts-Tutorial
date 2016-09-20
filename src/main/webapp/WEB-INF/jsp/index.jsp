@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC 
+<!DOCTYPE html PUBLIC
 	"-//W3C//DTD XHTML 1.1 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	
@@ -9,6 +9,7 @@
 	<title>Index</title>
 	<script src="js/jquery-1.12.4.min.js" type="application/javascript"></script>
     <script src="js/main.js" type="application/javascript"></script>
+    <script src="js/sumNrs.js" type="application/javascript"></script>
 	<s:head />
 </head>
 <body>
@@ -25,6 +26,14 @@
         <button type="button" id="sumButton">Click for the sum</button>
         <input type="text" disabled="disabled" id="outputC"/>
     </div>
+    <hr />
+<div>
+	<label>Numbers</label>
+	<input type="text" id="Nrs"/>
+	<button type="button" id="sumNrs">Suma</button>
+	<input type="text" disabled="disabled" id="outSum"/>
+	<label id="outSumLabel" style="visibility: visible" />
+</div>
 </body>
 </html>
 	

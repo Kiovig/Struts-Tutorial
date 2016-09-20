@@ -18,7 +18,7 @@
         </action>
 
         <action name="helloWorld" class="com.evildice.HelloWorldAction">
-            <result name="input">/jsp/index.jsp</result>
+            <result name="input">/WEB-INF/jsp/index.jsp</result>
             <result>/WEB-INF/jsp/helloWorld.jsp</result>
         </action>
 
@@ -27,6 +27,20 @@
                 <param name="useCache">false</param>
                 <param name="includeParameters">
                     theSum
+                </param>
+            </result>
+        </action>
+
+        <action name="AddArray" class="com.evildice.AddArrayNrs">
+            <result>/WEB-INF/jsp/sumArray.jsp</result>
+        </action>
+
+        <action name="sumArrayNumbers" class="com.evildice.AddArrayNrs" method="calcSum">
+            <result name="success" type="json">
+                <param name="useCache">false</param>
+                <param name="includeParameters">
+                    sum,
+                    vser\[\d+\]\..*
                 </param>
             </result>
         </action>
