@@ -22,9 +22,9 @@
     <input type="text" id="Nrs"/>
     <button type="button" id="sumNrs">Suma</button>
     <input type="text" disabled="disabled" id="outSum"/>
-    <%--<textarea disabled="disabled" id="showusr"/>--%>
-    <label id="showusr1"></label>
-    <table id="grid"></table>
+    <div><br/>
+        <table id="grid"></table>
+    </div>
 </div>
 </body>
 </html>
