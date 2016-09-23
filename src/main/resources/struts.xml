@@ -45,6 +45,12 @@
             </result>
         </action>
 
+        <action name="addUser" class="com.evildice.AddArrayNrs" method="addUser">
+            <result name="success" type="json">
+                <param name="useCache">false</param>
+            </result>
+        </action>
+
     </package>
 
 </struts>
